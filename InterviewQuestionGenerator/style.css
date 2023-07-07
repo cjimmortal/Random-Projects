@@ -1,0 +1,32 @@
+body{
+    background-color: #cce6ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+.questionGenerator{
+    height:100vh;
+    max-height:700px;
+    width:100%;  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.title{
+    width: 100%;
+    text-align: center;
+}
+.btn-generate-div{
+    width: 100%;
+    text-align: center;
+}
+.question-container{
+    margin-top:2rem;
+    width: 100%;
+    text-align: center;
+}
