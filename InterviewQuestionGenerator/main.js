@@ -11,7 +11,7 @@ function generate(){
     /*8*/'"If we will hire you, what can you bring to the table?"',
     /*9*/'"What is your expectation about our company?"',
     /*10*/'"What are your strength?"',
-    /*11*/'"What are your weakness?"',
+    /*11*/'"What are your weakness?"'
     ];
     // throwing the question into the div
     let randomNum = Math.floor((Math.random() * 13))
@@ -38,7 +38,32 @@ function generate(){
     document.getElementById('answer').innerHTML = answer;
 
     document.getElementById('questionBox').style.display="block";
-    document.getElementById('answerBox').style.display="block";
+    // document.getElementById('answerBox').style.display="block";
 
 
+}
+
+
+function switchmo(){
+    let circle = document.getElementById('switchCircle');
+
+    if(circle.innerHTML == '·'){//on
+        document.getElementById('switchCircle').style.float = 'right';
+        document.getElementById('switchBox').style.backgroundColor = '#2196f3';
+        document.getElementById('switchTitle').innerHTML ='answer on';
+        document.getElementById('switchCircle').innerHTML = '.';
+
+        document.getElementById('answerBox').style.display = 'block';
+
+        
+        
+    }else{//off
+        document.getElementById('switchCircle').style.float = 'left';
+        document.getElementById('switchBox').style.backgroundColor = '#607d8b';
+        document.getElementById('switchTitle').innerHTML ='answer off';
+        document.getElementById('switchCircle').innerHTML = '·';
+        
+        document.getElementById('answerBox').style.display = 'none';
+    }
+    
 }
