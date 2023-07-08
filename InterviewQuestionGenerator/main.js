@@ -14,7 +14,7 @@ function generate(){
     /*11*/'"What are your weakness?"'
     ];
     // throwing the question into the div
-    let randomNum = Math.floor((Math.random() * 13))
+    let randomNum = Math.floor((Math.random() * 11))
     document.getElementById('question').innerHTML = listQuestions[randomNum];
 
     switch(randomNum){
