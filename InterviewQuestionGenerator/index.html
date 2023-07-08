@@ -9,18 +9,28 @@
     <link rel="stylesheet" href="./style.css">
 </head>
     <div class="questionGenerator">
+        <header>
+            <!-- <img src="./"> -->
+        </header>
         <div class="container">
             <div class="title">
-                <h3>Interview Question Generator</h3>
+                <h5><b>Interview Question Generator</b></h5>
             </div>
             <div class="btn-generate-div">
-                <button onclick="generate()" type="button" class="btn btn-primary">Generate</button>
+                <button onclick="generate()" type="button" class="btn btn-primary">Generate</button> 
             </div>
 
-            <div class="question-container">
-                <h3 class="question" id="question">
-                Could you tell me about yourself and describe your background in brief?
-                </h3>
+            <div class="question-container" id="questionBox">
+                <h6 class="question" id="question">
+                ?
+                </h6>
+            </div>
+
+            <div class="answer-container" id="answerBox">
+                <h6 class="question"><b>The Answer:</b></h6>
+                <h6 class="question" id="answer">
+                ?
+                </h6>
             </div>
         </div>
 

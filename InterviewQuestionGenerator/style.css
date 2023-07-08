@@ -2,11 +2,21 @@ body{
     background-color: #cce6ff;
     font-family: 'Courier New', Courier, monospace;
 }
+header{
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top:0;
+    left:0;
+
+}
 .questionGenerator{
     height:100vh;
     max-height:700px;
     width:100%;  
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -19,13 +29,26 @@ body{
 }
 .title{
     width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+.btn , .btn-primary{
+    padding: 0 10px;
+    /* margin: -0.5rem 0 0 0.5rem; */
 }
 .btn-generate-div{
     width: 100%;
     text-align: center;
 }
 .question-container{
+    display: none;
+    margin-top:2rem;
+    width: 100%;
+    text-align: center;
+}
+.answer-container{
+    display: none;
     margin-top:2rem;
     width: 100%;
     text-align: center;
