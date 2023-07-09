@@ -36,9 +36,15 @@ function generate(){
 
     // throwing the answer into the div
     document.getElementById('answer').innerHTML = answer;
-
     document.getElementById('questionBox').style.display="block";
-    // document.getElementById('answerBox').style.display="block";
+
+
+    let answerSwitch = document.getElementById('switchCircle');
+    if(answerSwitch.innerHTML == '.'){
+        document.getElementById('answerBox').style.display="block";
+    }
+    
+    
 
 
 }
